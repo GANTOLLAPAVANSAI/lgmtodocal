@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="todo.css" />
+    <title>Todo</title>
+  </head>
+  <body>
+    <header>
+      <h1 style="text-align: center">Todo</h1>
+    </header>
+
+    <main>
+      <!-- filter and sort  -->
+
+      <!-- todos  -->
+      <section>
+        <ul class="todo-ul" id="todosContainer">
+       
+        </ul>
+      </section>
+      <!-- create todo  -->
+
+      <section class="py-10 px-12 position-relative">
+        <form
+           
+         class="create-form"
+          id="createForm"
+        >
+          <div class="input-container">
+            <label for="content">Todo content</label>
+            <input type="text" name="content" id="content" />
+          </div>
+          <button type="submit">Create</button>
+        </form>
+      </section>
+    </main>
+
+    <dialog id="editDialog" style="left: 50%; top:50%;transform: translate(-50%,-50%); padding:16px;max-width: 400px;width: 100%;">
+     
+    </dialog>
+
+    <footer>
+      <p style="text-align: center">
+        Todo
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+      </p>
+    </footer>
+
+    <script src="todo.js"></script>
+  </body>
+</html>
