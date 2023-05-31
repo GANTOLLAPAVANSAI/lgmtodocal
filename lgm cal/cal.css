@@ -1,0 +1,59 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    /*background-image: url(https://giffiles.alphacoders.com/398/39847.gif);*/
+    overflow: hidden;
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#calculator{
+    background-color: aquamarine;
+    padding: 15px;
+    border-radius: 50px;
+    display: grid;
+    grid-template-columns: repeat(4,68px);
+}
+#outputscreen{
+    grid-column: span 4;
+    width: 260px;
+    height: 150px;
+    margin:auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: end;
+    box-shadow: inset -5px -5px 12px #ffffff,
+                inset  5px 5px 12px rgba(0,0,0,.16);
+    border: none;
+    border-radius: 30px;
+    color:rgb(70,70,70);
+    font-size: 40px;
+    
+
+
+}
+input{
+    height: 48px;
+    width: 48px;
+    box-shadow:  inset -5px -5px 12px #ffffff,
+    inset  5px 5px 12px rgba(0,0,0,.16);
+    border: none;
+    border-radius: 50px;
+    margin: 8px;
+    font-weight: 700 ;
+    
+}
+input[type="button"]:hover {
+    background-color: rgb(37, 35, 59);
+    color: #fff;
+}
+.new{
+    width: 110px;
+    border-radius:20px;
+
+}
